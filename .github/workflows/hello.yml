@@ -12,7 +12,7 @@ jobs:
         run: echo "Hello, GitHub Actions"
       - name: Prints name  
         run: echo "x"
-jobs:
+
   say-bye:
     runs-on: ubuntu-latest
   
