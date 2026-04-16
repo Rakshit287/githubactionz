@@ -11,7 +11,7 @@ jobs:
       - name: Print message
         run: echo "Hello, GitHub Actions"
       - name: Prints name  
-        run: echo "x"
+        run: echo "zyz"
 
   say-bye:
     runs-on: ubuntu-latest
