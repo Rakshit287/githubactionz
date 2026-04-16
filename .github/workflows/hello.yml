@@ -5,9 +5,19 @@ on: push
 jobs:
   say-hello:
     runs-on: ubuntu-latest
+  
 
     steps:
       - name: Print message
         run: echo "Hello, GitHub Actions"
       - name: Prints name  
-        run: echo "Rakshit"
+        run: echo "x"
+jobs:
+  say-bye:
+    runs-on: ubuntu-latest
+  
+
+    steps:
+      - name: Print message
+        run: echo "Goodbye from second job"
+      
