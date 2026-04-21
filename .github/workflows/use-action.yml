@@ -12,3 +12,5 @@ jobs:
         uses: actions/setup-node@v4
       - name: shows the Node version
         run: node --version
+      - name: Install dependencies
+        run: npm install
