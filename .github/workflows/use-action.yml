@@ -8,3 +8,7 @@ jobs:
         uses: actions/checkout@v4
       - name: List files in the repository
         run: ls
+      - name: Setup Node
+        uses: actions/setup-node@v4
+      - name: shows the Node version
+        run: node --version
