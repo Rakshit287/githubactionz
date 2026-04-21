@@ -14,3 +14,5 @@ jobs:
         run: node --version
       - name: Install dependencies
         run: npm install
+      - name: Run the application
+        run: node index.js
