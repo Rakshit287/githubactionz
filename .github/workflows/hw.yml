@@ -1,0 +1,42 @@
+name: Use Action Workflow
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 🔹 Your original steps
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: List files
+        run: ls -la
+
+      # 🔹 Setup Node
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Check Node version
+        run: node -v
+
+      # 🔹 Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # 🔹 Linting
+      - name: Run Linter
+        run: npm run lint
+
+      # 🔹 Build project
+      - name: Build project
+        run: npm run build
+
+      # 🔹 Run tests
+      - name: Run tests
+        run: npm test
